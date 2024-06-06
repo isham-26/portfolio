@@ -1,0 +1,88 @@
+"use client";
+import Link from "next/link";
+import { Button } from "./ui/button";
+import { useState } from "react";
+import { Nav } from "./Nav";
+
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  return (
+    <header className="flex justify-center py-8 xl:py-12 text-white">
+      <div className="w-full xl:w-[80%] flex">
+        <div className="container mx-auto">
+          <Link href="/">
+            <div className="logo text-4xl font-semibold">
+              Isham<span className="text-accent">.</span>
+            </div>
+          </Link>
+        </div>
+        <div className="hidden xl:flex xl:gap-8">
+          <Nav />
+          <Link href="/contact">
+            <Button className="bg-accent rounded-full">Hire me</Button>
+          </Link>
+        </div>
+
+        <div className="xl:hidden">
+          <button
+            className="text-white inline-flex items-center justify-center p-2 rounded-md lg:hidden"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            {/* Hamburger icon: */}
+            <svg
+              className="w-6 h-6 text-accent"
+              fill="none"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              {isOpen ? (
+                <path d="M6 18L18 6M6 6l12 12" /> // 'X' icon
+              ) : (
+                <path d="M4 6h16M4 12h16M4 18h16" /> // Hamburger icon
+              )}
+            </svg>
+          </button>
+          {isOpen && (
+            <div className="absolute right-2 top-20 bg-accent p-3 text-white rounded-md">
+              <ul>
+                <Link href="/">
+                  <li className="hover:bg-white w-[10rem] hover:text-accent px-2">
+                    Home
+                  </li>
+                </Link>
+                <Link href="/services">
+                  <li className="hover:bg-white w-[10rem] hover:text-accent px-2">
+                    Services
+                  </li>
+                </Link>
+                <Link href="projects">
+                  <li className="hover:bg-white w-[10rem] hover:text-accent px-2">
+                    Projects
+                  </li>
+                </Link>
+                <Link href="resume">
+                  <li className="hover:bg-white w-[10rem] hover:text-accent px-2">
+                    Resume
+                  </li>
+                </Link>
+                <Link href="contact">
+                  <li className="hover:bg-white w-[10rem] hover:text-accent px-2">
+                    Contact
+                  </li>
+                </Link>
+              </ul>
+              <Link href="/contact">
+                <Button className="bg-white text-accent rounded-full mt-3 w-full">Hire me</Button>
+              </Link>
+            </div>
+          )}
+        </div>
+      </div>
+    </header>
+  );
+};
+
+export default Navbar;
