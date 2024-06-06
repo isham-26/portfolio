@@ -29,8 +29,8 @@ export const Nav = () => {
     <nav className="flex gap-8">
       {listdata.map((data, index) => {
         return (
-          <Link href={data.link}>
-            <div className={`${data.link===pathname && "text-accent border-b border-accent"}`} key={index}>{data.name}</div>
+          <Link href={data.link} className={`${data.link===pathname && "text-accent border-b border-accent"}`} key={index}>
+            {data.name}
           </Link>
         );
       })}
