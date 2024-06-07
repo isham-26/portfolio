@@ -9,10 +9,6 @@ export const Nav = () => {
       link: "/",
     },
     {
-      name: "skills",
-      link: "/skills",
-    },
-    {
       name: "projects",
       link: "/projects",
     },
