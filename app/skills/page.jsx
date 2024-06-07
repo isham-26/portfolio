@@ -1,9 +1,9 @@
 
 
-const Serv = () => {
+const Skills = () => {
   return (
     <div>Services</div>
   )
 }
 
-export default Services
+export default Skills
