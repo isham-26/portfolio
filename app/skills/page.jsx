@@ -2,7 +2,7 @@
 
 const Skills = () => {
   return (
-    <div>Services</div>
+    <div>skils</div>
   )
 }
 
