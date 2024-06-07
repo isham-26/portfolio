@@ -7,8 +7,8 @@ import { Nav } from "./Nav";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <header className="flex justify-center py-8 xl:py-12 text-white">
-      <div className="w-full xl:w-[80%] flex">
+    <header className="flex justify-center py-8 xl:py-5 text-white border-b border-accent mb-10">
+      <div className="w-[90%] xl:w-[70%] flex">
         <div className="container mx-auto">
           <Link href="/">
             <div className="logo text-4xl font-semibold">

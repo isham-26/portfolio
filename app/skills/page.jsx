@@ -1,6 +1,6 @@
 
 
-const Services = () => {
+const Serv = () => {
   return (
     <div>Services</div>
   )

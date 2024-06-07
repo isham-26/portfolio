@@ -9,8 +9,8 @@ export const Nav = () => {
       link: "/",
     },
     {
-      name: "services",
-      link: "/services",
+      name: "skills",
+      link: "/skills",
     },
     {
       name: "projects",
@@ -29,7 +29,7 @@ export const Nav = () => {
     <nav className="flex gap-8">
       {listdata.map((data, index) => {
         return (
-          <Link href={data.link} className={`${data.link===pathname && "text-accent border-b border-accent"}`} key={index}>
+          <Link href={data.link} className={`${data.link===pathname && "text-accent border-b border-accent"} capitalize`} key={index}>
             {data.name}
           </Link>
         );
