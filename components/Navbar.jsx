@@ -7,9 +7,9 @@ import { Nav } from "./Nav";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <header className="flex justify-center py-8 xl:py-5 text-white border-b border-accent xl:mb-10">
-      <div className="w-[90%] xl:w-[70%] flex">
-        <div className="container mx-auto">
+    <header className="flex justify-center py-8 xl:py-5 text-white border-b border-accent xl:mb-10 mb-5">
+      <div className="w-[90%] xl:w-[70%] flex justify-between">
+        <div className="">
           <Link href="/">
             <div className="logo text-4xl font-semibold">
               Isham<span className="text-accent">.</span>
@@ -23,9 +23,9 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <div className="xl:hidden">
+        <div className="xl:hidden flex flex-row-reverse">
           <button
-            className="text-white inline-flex items-center justify-center p-2 rounded-md lg:hidden"
+            className="text-white inline-flex p-2 rounded-md lg:hidden"
             onClick={() => setIsOpen(!isOpen)}
           >
             {/* Hamburger icon: */}
@@ -46,25 +46,25 @@ const Navbar = () => {
             </svg>
           </button>
           {isOpen && (
-            <div className="absolute right-2 top-20 bg-accent p-3 text-white rounded-md">
+            <div className=" p-3 text-white rounded-md">
               <ul>
                 <Link href="/">
-                  <li className="hover:bg-white w-[10rem] hover:text-accent px-2">
+                  <li className="hover:bg-accent w-[10rem] hover:text-white px-2">
                     Home
                   </li>
                 </Link>
                 <Link href="projects">
-                  <li className="hover:bg-white w-[10rem] hover:text-accent px-2">
+                  <li className="hover:bg-accent w-[10rem] hover:text-white px-2">
                     Projects
                   </li>
                 </Link>
                 <Link href="resume">
-                  <li className="hover:bg-white w-[10rem] hover:text-accent px-2">
+                  <li className="hover:bg-accent w-[10rem] hover:text-white px-2">
                     Resume
                   </li>
                 </Link>
                 <Link href="contact">
-                  <li className="hover:bg-white w-[10rem] hover:text-accent px-2">
+                  <li className="hover:bg-accent w-[10rem] hover:text-white px-2">
                     Contact
                   </li>
                 </Link>

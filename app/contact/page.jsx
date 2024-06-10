@@ -24,7 +24,7 @@ const data = [
 const Contact = () => {
   return (
     <div className="flex justify-center ">
-      <div className="flex flex-col xl:flex-row xl:gap-20 gap-0 xl:w-[80%] w-full">
+      <div className="flex flex-col xl:flex-row xl:gap-20 gap-0 xl:w-[80%] w-full mt-[-18px]">
         <div className="flex flex-col gap-5 bg-pink-50/10 p-5 rounded-md">
           <div className="text-4xl text-accent">Lets work together</div>
           <p>
@@ -61,10 +61,10 @@ const Contact = () => {
                 <div className="text-accent xl:text-2xl text-xl" >
                   {info.icon}
                 </div>
-                <div className=" xl:text-xl italic" >
+                <div className=" xl:text-xl" >
                   {info.title}
                 </div>
-                <div className=" xl:text-xl italic">
+                <div className=" xl:text-xl italic text-accent">
                   {info.descrption}
                 </div>
               </div>

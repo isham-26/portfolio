@@ -22,7 +22,7 @@ const HomePage = () => {
                 <span className="mr-3">Downlod cv</span>
                 <FiDownload />
               </Button>
-              <div className="solial">
+              <div className="solial mb-5">
                 <Social />
               </div>
             </div>
