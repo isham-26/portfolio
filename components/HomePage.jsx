@@ -6,7 +6,7 @@ import self from "@/public/man.png";
 const HomePage = () => {
   return (
     <div className="h-full">
-      <div className="w-[70%] mx-auto h-full">
+      <div className="w-[70%] mx-auto h-full mt-5 mb-5">
         <div className="flex flex-col-reverse xl:flex-row items-center xl:gap-40 xl:pt-8 xl:pb-16">
           <div className="text-center xl:text-left flex flex-col gap-2 items-center xl:items-start">
             <div className="text-accent">Web Devloper</div>
@@ -32,7 +32,7 @@ const HomePage = () => {
             <Image src={self} alt="img" className=" h-[250px] w-[250px] mb-8" />
           </div>
         </div>
-        <div className="text-center xl:text-left">
+        <div className="text-center xl:text-left ">
             <div className=" text-4xl mt-1"><span className="text-accent text-center">DSA</span> Achivements</div>
             <div className="xl:flex-row xl:gap-32 flex-col flex items-center">
             <div className="mt-5 flex items-center gap-5">

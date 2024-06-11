@@ -7,7 +7,7 @@ import { Nav } from "./Nav";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <header className="flex justify-center py-8 xl:py-5 text-white border-b border-accent xl:mb-10 mb-5">
+    <header className="flex justify-center py-8 xl:py-5 text-white border-b border-accent xl:mb-10 mb-1">
       <div className="w-[90%] xl:w-[70%] flex justify-between">
         <div className="">
           <Link href="/">
@@ -23,7 +23,7 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <div className="xl:hidden flex flex-row-reverse">
+        <div className="xl:hidden flex flex-col items-end">
           <button
             className="text-white inline-flex p-2 rounded-md lg:hidden"
             onClick={() => setIsOpen(!isOpen)}
