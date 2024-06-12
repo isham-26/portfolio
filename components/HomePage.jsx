@@ -5,7 +5,7 @@ import { FiDownload } from "react-icons/fi";
 import self from "@/public/man.png";
 const HomePage = () => {
   return (
-    <div className="h-full">
+    <div className="min-h-[75vh]">
       <div className="w-[70%] mx-auto h-full mt-5 mb-5">
         <div className="flex flex-col-reverse xl:flex-row items-center xl:gap-40 xl:pt-8 xl:pb-16">
           <div className="text-center xl:text-left flex flex-col gap-2 items-center xl:items-start">
@@ -22,7 +22,7 @@ const HomePage = () => {
                 <span className="mr-3">Downlod cv</span>
                 <FiDownload />
               </Button>
-              <div className="solial mb-5">
+              <div className="">
                 <Social />
               </div>
             </div>
