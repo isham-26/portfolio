@@ -37,7 +37,7 @@ const Resume = () => {
             <SkillsCard
               sectionName="Languages"
               icons={[<IoLogoJavascript />, <SiTypescript />, <TbBrandCpp />]}
-            />
+              key={1}/>
             <SkillsCard
               sectionName="Frameworks"
               icons={[
@@ -48,15 +48,15 @@ const Resume = () => {
                 <TbBrandNextjs />,
                 <SiTailwindcss />,
               ]}
-            />
+            key={2}/>
             <SkillsCard
               sectionName="Databases"
               icons={[<SiMongodb />, <SiMysql />]}
-            />
+              key={3}/>
             <SkillsCard
               sectionName="Tools"
               icons={[<FaGithub />, <IoLogoFirebase />]}
-            />
+              key={4}/>
           </div>
         </div>
         <div className="">
