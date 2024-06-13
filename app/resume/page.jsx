@@ -81,27 +81,27 @@ const Resume = () => {
           <div className="flex xl:flex-row flex-col px-6 py-3 gap-8">
             <div className="flex-[3] xl:text-xl p-1">
               <p className="mb-5">
-                Hello I am <span className="text-accent">Isham Gupta</span>, a
+                Hello I am <span className="text-accent">Isham Gupta</span>&#44; a
                 passionate computer science student currently pursuing my
-                Bachelor's in Technology &#40;with Data Science&#41; at{" "}
+                Bachelor&#39;s in Technology &#40;with Data Science&#41; at{" "}
                 <span className="text-accent">
-                  Heritage Institute of Technology, Kolkata, India.
+                  Heritage Institute of Technology&#44; Kolkata&#44; India.
                 </span>
               </p>
               <p className="">
-                Alongside my studies, I have immersed myself in the world of
-                technology, honing my skills in various programming languages
+                Alongside my studies&#44; I have immersed myself in the world of
+                technology&#44; honing my skills in various programming languages
                 like
-                <span className="text-accent"> TypeScript</span>,{" "}
-                <span className="text-accent">JavaScript</span>, and{" "}
+                <span className="text-accent"> TypeScript</span>&#44;{" "}
+                <span className="text-accent">JavaScript</span>&#44; and{" "}
                 <span className="text-accent">C++</span>. My proficiency extends
                 to frameworks such as{" "}
-                <span className="text-accent">Fast API</span>,{" "}
-                <span className="text-accent">React.js</span>,{" "}
-                <span className="text-accent">Express.js</span>, and
-                <span className="text-accent"> Node.js</span>, complemented by a
+                <span className="text-accent">Fast API</span>&#44;{" "}
+                <span className="text-accent">React.js</span>&#44;{" "}
+                <span className="text-accent">Express.js</span>&#44; and
+                <span className="text-accent"> Node.js</span>&#44; complemented by a
                 strong foundation in databases like
-                <span className="text-accent"> MongoDB</span>,{" "}
+                <span className="text-accent"> MongoDB</span>&#44;{" "}
                 <span className="text-accent">MySQL</span>.
               </p>
             </div>
