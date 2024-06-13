@@ -44,7 +44,7 @@ const HomePage = () => {
           </div>
 
           <div className="w-[298px] h-[298px] xl:w-[498] xl:h-[300px] border-[4px] border-accent rounded-full flex justify-center items-center mb-5 bg-pink-50/5">
-            <Image src={self} alt="img" className=" h-[220px] w-[220px] mb-8 mr-8 mix-blend-lighten" />
+            <Image src={self} alt="img" className=" h-[200px] w-[200px] mb-8 mix-blend-lighten" />
           </div>
         </div>
         
