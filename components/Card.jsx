@@ -27,7 +27,7 @@ const Card = ({ item }) => {
         </p>
         <div className="">
           <div className="text-xl"><span className="text-accent">* </span>Using Tools</div>
-          <div className="flex gap-5 text-2xl mt-3 text-accent">
+          <div className="flex xl:gap-5 gap-4 flex-wrap text-2xl mt-3 text-accent">
           {item.tools.map((icon, index) => {
             return (
               <span className="" key={index}>

@@ -2,7 +2,7 @@ import Image from "next/image";
 import Social from "./Social";
 import { Button } from "./ui/button";
 import { FiDownload } from "react-icons/fi";
-import self from "@/public/man.png";
+import self from "@/public/isham.png";
 import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 const data = [
   {
@@ -35,7 +35,7 @@ const HomePage = () => {
               <span className="text-accent">Languages-:</span>
               <span className="italic">Hindi,English</span>
             </div>
-            <div className="flex flex-col xl:flex-row xl:gap-10 gap-5 w-[9rem] ">
+            <div className="flex flex-col xl:flex-row xl:gap-10 gap-5 w-[10rem] ">
               <Button className="bg-transparent text-accent border-2 border-accent uppercase rounded-full hover:bg-accent hover:text-white">
                 <span className="mr-3">Download cv</span>
                 <FiDownload />
@@ -43,8 +43,8 @@ const HomePage = () => {
             </div>
           </div>
 
-          <div className="w-[298px] h-[298px] xl:w-[498] xl:h-[300px] border-[4px] border-accent rounded-full flex justify-center items-center mb-5 mix-blend-lighten">
-            <Image src={self} alt="img" className=" h-[250px] w-[250px] mb-8" />
+          <div className="w-[298px] h-[298px] xl:w-[498] xl:h-[300px] border-[4px] border-accent rounded-full flex justify-center items-center mb-5 bg-pink-50/5">
+            <Image src={self} alt="img" className=" h-[220px] w-[220px] mb-8 mr-8 mix-blend-lighten" />
           </div>
         </div>
         
