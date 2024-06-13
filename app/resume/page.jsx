@@ -18,6 +18,31 @@ import { IoLogoFirebase } from "react-icons/io5";
 import SkillsCard from "@/components/SkillsCard";
 import Link from "next/link";
 const Resume = () => {
+  const data = [
+    {
+      sectionName: "Languages",
+      icons: [<IoLogoJavascript />, <SiTypescript />, <TbBrandCpp />],
+    },
+    {
+      sectionName: "Frameworks",
+      icons: [
+        <SiFastapi />,
+        <FaReact />,
+        <FaNodeJs />,
+        <SiExpress />,
+        <TbBrandNextjs />,
+        <SiTailwindcss />,
+      ],
+    },
+    {
+      sectionName: "Databases",
+      icons: [<SiMongodb />, <SiMysql />],
+    },
+    {
+      sectionName: "Databases",
+      icons: [<FaGithub />, <IoLogoFirebase />],
+    },
+  ];
   return (
     <div className="flex justify-center items-center p-2">
       <div className="xl:w-[70%] w-full">
@@ -34,29 +59,15 @@ const Resume = () => {
             <span className="text-accent">$ </span>Skills
           </div>
           <div className="flex flex-col xl:flex-row xl:flex-wrap xl:gap-8 gap-5 justify-center mb-10">
-            <SkillsCard
-              sectionName="Languages"
-              icons={[<IoLogoJavascript />, <SiTypescript />, <TbBrandCpp />]}
-              key={1}/>
-            <SkillsCard
-              sectionName="Frameworks"
-              icons={[
-                <SiFastapi />,
-                <FaReact />,
-                <FaNodeJs />,
-                <SiExpress />,
-                <TbBrandNextjs />,
-                <SiTailwindcss />,
-              ]}
-            key={2}/>
-            <SkillsCard
-              sectionName="Databases"
-              icons={[<SiMongodb />, <SiMysql />]}
-              key={3}/>
-            <SkillsCard
-              sectionName="Tools"
-              icons={[<FaGithub />, <IoLogoFirebase />]}
-              key={4}/>
+            {data.map((items, indx) => {
+              return (
+                <SkillsCard
+                  sectionName={items.sectionName}
+                  icons={items.icons}
+                  key={indx}
+                />
+              );
+            })}
           </div>
         </div>
         <div className="">
@@ -96,9 +107,24 @@ const Resume = () => {
                   <span className="text-accent">/</span>social-profiles
                 </div>
                 <div className="flex gap-5 justify-between text-3xl">
-                  <Link href="https://www.linkedin.com/in/isham-gupta-617548305/" className="h-[55px] w-[55px] bg-pink-50/20 flex justify-center items-center rounded-md hover:bg-accent ease-in-out duration-300"><FaLinkedinIn alphabetic={"LinkedIn"} /></Link>
-                  <Link href="https://www.instagram.com/guptaisham/" className="h-[55px] w-[55px] bg-pink-50/20 flex justify-center items-center rounded-md hover:bg-accent ease-in-out duration-300"><FaInstagram alphabetic={"Insta"} /></Link>
-                  <Link href="https://github.com/isham-26" className="h-[55px] w-[55px] bg-pink-50/20 flex justify-center items-center rounded-md hover:bg-accent ease-in-out duration-300"><FaGithub alphabetic={"GitHub"} /></Link>
+                  <Link
+                    href="https://www.linkedin.com/in/isham-gupta-617548305/"
+                    className="h-[55px] w-[55px] bg-pink-50/20 flex justify-center items-center rounded-md hover:bg-accent ease-in-out duration-300"
+                  >
+                    <FaLinkedinIn alphabetic={"LinkedIn"} />
+                  </Link>
+                  <Link
+                    href="https://www.instagram.com/guptaisham/"
+                    className="h-[55px] w-[55px] bg-pink-50/20 flex justify-center items-center rounded-md hover:bg-accent ease-in-out duration-300"
+                  >
+                    <FaInstagram alphabetic={"Insta"} />
+                  </Link>
+                  <Link
+                    href="https://github.com/isham-26"
+                    className="h-[55px] w-[55px] bg-pink-50/20 flex justify-center items-center rounded-md hover:bg-accent ease-in-out duration-300"
+                  >
+                    <FaGithub alphabetic={"GitHub"} />
+                  </Link>
                 </div>
               </div>
               <div className="flex flex-col gap-5">
@@ -106,9 +132,24 @@ const Resume = () => {
                   <span className="text-accent">/</span>DSA-profiles
                 </div>
                 <div className="flex justify-between text-3xl">
-                <Link href="https://www.geeksforgeeks.org/user/gashu7841/" className="h-[55px] w-[55px] bg-pink-50/20 flex justify-center items-center rounded-md hover:bg-accent ease-in-out duration-300"><SiGeeksforgeeks alphabetic={"GFG"} /></Link>
-                  <Link href="https://leetcode.com/u/ishamGupta_26/" className="h-[55px] w-[55px] bg-pink-50/20 flex justify-center items-center rounded-md hover:bg-accent ease-in-out duration-300"><SiLeetcode alphabetic={"LeetCode"} /></Link>
-                  <Link href="https://codeforces.com/profile/isham_26" className="h-[55px] w-[55px] bg-pink-50/20 flex justify-center items-center rounded-md hover:bg-accent ease-in-out duration-300"><SiCodeforces alphabetic={"CodeForces"} /></Link>
+                  <Link
+                    href="https://www.geeksforgeeks.org/user/gashu7841/"
+                    className="h-[55px] w-[55px] bg-pink-50/20 flex justify-center items-center rounded-md hover:bg-accent ease-in-out duration-300"
+                  >
+                    <SiGeeksforgeeks alphabetic={"GFG"} />
+                  </Link>
+                  <Link
+                    href="https://leetcode.com/u/ishamGupta_26/"
+                    className="h-[55px] w-[55px] bg-pink-50/20 flex justify-center items-center rounded-md hover:bg-accent ease-in-out duration-300"
+                  >
+                    <SiLeetcode alphabetic={"LeetCode"} />
+                  </Link>
+                  <Link
+                    href="https://codeforces.com/profile/isham_26"
+                    className="h-[55px] w-[55px] bg-pink-50/20 flex justify-center items-center rounded-md hover:bg-accent ease-in-out duration-300"
+                  >
+                    <SiCodeforces alphabetic={"CodeForces"} />
+                  </Link>
                 </div>
               </div>
             </div>
