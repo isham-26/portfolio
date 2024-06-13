@@ -147,7 +147,7 @@ const Resume = () => {
               Achievements
             </div>
             <div className="flex xl:gap-10 gap-5 flex-col xl:flex-row mt-5">
-              <div className="flex flex-col xl-flex-row justify-between xl:items-center flex-[3] mx-7 xl:mx-0">
+              <div className="flex flex-col xl:flex-row justify-between xl:items-center flex-[3] mx-7 xl:mx-0">
                 <div className="flex gap-5">
                   <div className="text-2xl text-accent">CodeChef</div>
                   <div className="text-3xl">
