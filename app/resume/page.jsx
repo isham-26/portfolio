@@ -22,29 +22,29 @@ const Resume = () => {
     {
       key:1,
       sectionName: "Languages",
-      icons: [<IoLogoJavascript />, <SiTypescript />, <TbBrandCpp />],
+      icons: [<IoLogoJavascript key={11}/>, <SiTypescript key={12}/>, <TbBrandCpp key={13}/>],
     },
     {
       key:2,
       sectionName: "Frameworks",
       icons: [
-        <SiFastapi />,
-        <FaReact />,
-        <FaNodeJs />,
-        <SiExpress />,
-        <TbBrandNextjs />,
-        <SiTailwindcss />,
+        <SiFastapi key={10}/>,
+        <FaReact key={9}/>,
+        <FaNodeJs key={8}/>,
+        <SiExpress key={7}/>,
+        <TbBrandNextjs key={6}/>,
+        <SiTailwindcss key={5}/>,
       ],
     },
     {
       key:3,
       sectionName: "Databases",
-      icons: [<SiMongodb />, <SiMysql />],
+      icons: [<SiMongodb key={3}/>, <SiMysql key={4}/>],
     },
     {
       key:4,
       sectionName: "Databases",
-      icons: [<FaGithub />, <IoLogoFirebase />],
+      icons: [<FaGithub key={1}/>, <IoLogoFirebase key={2}/>],
     },
   ];
   return (
