@@ -18,9 +18,7 @@ const Navbar = () => {
         </div>
         <div className="hidden xl:flex xl:gap-8">
           <Nav />
-          <Link href="/contact">
-            <Button className="bg-accent rounded-full">Hire me</Button>
-          </Link>
+          
         </div>
 
         <div className="xl:hidden flex flex-col items-end">
@@ -63,15 +61,8 @@ const Navbar = () => {
                     Resume
                   </li>
                 </Link>
-                <Link href="contact">
-                  <li className="hover:bg-accent w-[10rem] hover:text-white px-2">
-                    Contact
-                  </li>
-                </Link>
+                
               </ul>
-              <Link href="/contact">
-                <Button className="bg-white text-accent rounded-full mt-3 w-full">Hire me</Button>
-              </Link>
             </div>
           )}
         </div>

@@ -25,7 +25,7 @@ const Social = () => {
         {
             data.map((item,index)=>{
                 return (
-                    <Link href={item.path} className="xl:h-[40px] xl:w-[40px]  xl:bg-pink-50/20 flex justify-center items-center rounded-full hover:bg-accent ease-in-out duration-300 text-xl" key={index}>{item.icon}</Link>
+                    <Link href={item.path} className="xl:h-[40px] xl:w-[40px]  xl:bg-pink-50/20 flex justify-center items-center rounded-full hover:bg-accent ease-in-out duration-300 text-xl text-accent hover:text-white" key={index} target="_blank">{item.icon}</Link>
                 )
             })
         }

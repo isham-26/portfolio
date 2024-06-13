@@ -26,7 +26,7 @@ const Projects = () => {
   ]
   return (
     <div className="flex justify-center items-center">
-      <div className="xl:w-[70%] w-full p-2 xl:p-0">
+      <div className="xl:w-[70%] w-full p-4 xl:p-0">
         {
            data.map((item,indx)=>{
               return (
