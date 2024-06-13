@@ -20,10 +20,12 @@ import Link from "next/link";
 const Resume = () => {
   const data = [
     {
+      key:1,
       sectionName: "Languages",
       icons: [<IoLogoJavascript />, <SiTypescript />, <TbBrandCpp />],
     },
     {
+      key:2,
       sectionName: "Frameworks",
       icons: [
         <SiFastapi />,
@@ -35,10 +37,12 @@ const Resume = () => {
       ],
     },
     {
+      key:3,
       sectionName: "Databases",
       icons: [<SiMongodb />, <SiMysql />],
     },
     {
+      key:4,
       sectionName: "Databases",
       icons: [<FaGithub />, <IoLogoFirebase />],
     },
