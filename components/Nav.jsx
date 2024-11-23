@@ -8,14 +8,6 @@ export const Nav = () => {
       name: "home",
       link: "/",
     },
-    {
-      name: "projects",
-      link: "/projects",
-    },
-    {
-      name: "resume",
-      link: "/resume",
-    },
   ];
   return (
     <nav className="flex gap-8">

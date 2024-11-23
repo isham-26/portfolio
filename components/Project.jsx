@@ -14,7 +14,7 @@ import {
 } from "react-icons/si";
 import { TbBrandCpp, TbBrandNextjs } from "react-icons/tb";
 import { IoLogoFirebase } from "react-icons/io5";
-const page = () => {
+const Projects = () => {
   const data =[
     {
       num:1,
@@ -49,8 +49,8 @@ const page = () => {
     },
   ]
   return (
-    <div className="flex justify-center">
-      <div className="flex flex-wrap gap-7 p-4 xl:p-0">
+    <div className="flex">
+      <div className="flex flex-wrap justify-center gap-7 p-4 xl:p-0">
         {
            data.map((item,indx)=>{
               return (
@@ -63,4 +63,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Projects

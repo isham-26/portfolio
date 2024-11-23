@@ -4,7 +4,7 @@ import React from "react";
 import { BsArrowUpRight, BsGithub } from "react-icons/bs";
 const Card = ({ item }) => {
   return (
-    <div className="xl:w-[36rem] xl:gap-7 gap-4 bg-pink-50/20 rounded-md mb-3 xl:hover:scale-105 ease-in-out duration-500">
+    <div className="xl:w-[30rem] xl:gap-7 gap-4 bg-pink-50/20 rounded-md mb-3 xl:hover:scale-105 ease-in-out duration-500">
       <div className="overflow-hidden bg-white rounded-tl-md rounded-tr-md ">
         <Image
           src={`/${item.img}`}
@@ -22,7 +22,7 @@ const Card = ({ item }) => {
         <div className="xl:text-2xl text-xl text-white text-bold">
           {item.categiry}
         </div>
-        <p className="text-bold text-gray-300 line-clamp-5 leading-6">
+        <p className="text-bold text-gray-300 line-clamp-3 leading-6" title={item.discription}>
           {item.discription}
         </p>
         <div className="">

@@ -14,6 +14,15 @@ const JetBrainsMono = JetBrains_Mono({
 export const metadata = {
   title: "Isham's portfolio",
   description: "Small introduction of isham gupta",
+  icons:{
+    icon:[{
+      url: '/logo.png',
+      href: '/logo.png',
+
+    }
+     
+    ]
+  }
 };
 
 export default function RootLayout({ children }) {

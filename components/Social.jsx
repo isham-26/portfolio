@@ -21,11 +21,11 @@ const Social = () => {
         },
     ]
   return (
-    <div className='flex gap-5 mb-5 xl:mb-0 '>
+    <div className='flex flex-wrap justify-center gap-6 mb-5 xl:mb-0 w-[170px]'>
         {
             data.map((item,index)=>{
                 return (
-                    <Link href={item.path} className="xl:h-[40px] xl:w-[40px]  xl:bg-pink-50/20 flex justify-center items-center rounded-full hover:bg-accent ease-in-out duration-300 text-xl text-accent hover:text-white" key={index} target="_blank">{item.icon}</Link>
+                    <Link href={item.path} className="h-[60px] w-[60px] flex justify-center items-center rounded-md hover:bg-accent ease-in-out duration-300 text-accent hover:text-white text-4xl" key={index} target="_blank">{item.icon}</Link>
                 )
             })
         }
