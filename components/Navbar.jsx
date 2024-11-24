@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-
+import { RxCross1 } from "react-icons/rx";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname(); // Replaces useRouter for active link detection
@@ -65,15 +65,15 @@ const Navbar = () => {
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
-              {isOpen ? (
-                <path d="M6 18L18 6M6 6l12 12" /> // Close Icon
-              ) : (
-                <path d="M4 6h16M4 12h16M4 18h16" /> // Hamburger Icon
-              )}
+            <path d="M4 6h16M4 12h16M4 18h16" /> // Hamburger Icon
             </svg>
           </button>
           {isOpen && (
-            <div className="p-3 text-white rounded-md bg-black bg-opacity-90 absolute">
+            <div className=" flex flex-col gap-3 p-3 text-white rounded-md bg-black bg-opacity-90 absolute">
+            <div className="flex justify-end text-xl" >
+               <RxCross1 onClick={()=>setIsOpen(!open)}/>
+            </div>
+            <div className="">
               <ul className="space-y-2">
                 <Link
                   href="/"
@@ -100,6 +100,7 @@ const Navbar = () => {
                   Resume
                 </Link>
               </ul>
+              </div>
             </div>
           )}
         </div>
