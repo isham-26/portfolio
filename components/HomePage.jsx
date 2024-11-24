@@ -12,8 +12,8 @@ const HomePage = () => {
         <div className="flex flex-col xl:flex-row justify-between xl:gap-40 xl:pt-8 xl:pb-8">
           <div className="text-center xl:text-left flex flex-col gap-2 items-center xl:items-start">
             <div className="text-accent">Web Developer</div>
-            <div className="text-5xl">Hello I am</div>
-            <div className="text-5xl text-accent">Isham Gupta</div>
+            <div className="xl:text-5xl text-3xl">Hello I am</div>
+            <div className="xl:text-5xl text-3xl text-accent">Isham Gupta</div>
             <p className="max-w-[500px] text-white/80">
               Stepped into programming back in 2022, and now I am a{" "}
               <span className="text-accent">FullStack Developer</span> with

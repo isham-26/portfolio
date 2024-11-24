@@ -70,10 +70,12 @@ const Resume = () => {
           <div className="xl:text-3xl text-2xl">
             <span className="text-accent">$ </span>Resume.
           </div>
-          <Button className="text-[12px] xl:text-xl bg-transparent text-accent border-2 border-accent uppercase rounded-full hover:bg-accent hover:text-white">
-                <a className="mr-2 " href="/isham-gupta.pdf" download>Download resume</a>
-                <FiDownload />
-              </Button>
+          <Button className="text-[12px] xl:text-[15px] xl:p-4 bg-transparent text-accent border-2 border-accent rounded-full hover:bg-accent hover:text-white">
+            <a className="mr-2 " href="/isham-gupta.pdf" download>
+              Resume
+            </a>
+            <FiDownload />
+          </Button>
         </div>
         <div className="p-4 w-full bg-transparent flex flex-col gap-5">
           <div className="xl:text-2xl text-xl">
@@ -96,9 +98,12 @@ const Resume = () => {
             <div className="xl:text-2xl text-xl flex items-center">
               <span className="text-accent">$ </span>Experience
             </div>
-            <Button className="bg-transparent border border-accent text-accent hover:bg-accent hover:text-white rounded-full mb-1 text-[10px] xl:text-xl">
-             <a className="mr-3" href="/internship.pdf" download> Certificate</a>
-             <FiDownload />
+            <Button className="bg-transparent border border-accent text-accent hover:bg-accent hover:text-white rounded-full mb-1 text-[10px] xl:text-[15px]">
+              <a className="mr-3" href="/internship.pdf" download>
+                {" "}
+                Certificate
+              </a>
+              <FiDownload />
             </Button>
           </div>
           <div className="px-5">
@@ -134,14 +139,14 @@ const Resume = () => {
           </div>
         </div>
         <div className="p-2 w-full bg-transparent flex flex-col gap-5">
-        <div className="flex justify-between">
+          <div className="flex justify-between">
             <div className="xl:text-2xl text-xl flex items-center">
               <span className="text-accent">$ </span>Projects
             </div>
             <Link href="/projects">
-            <Button className="bg-transparent border border-accent text-accent hover:bg-accent hover:text-white rounded-full mb-1">
-              View All
-            </Button>
+              <Button className="bg-transparent border border-accent text-accent hover:bg-accent hover:text-white rounded-full mb-1">
+                View All
+              </Button>
             </Link>
           </div>
           <div className="flex flex-col xl:flex-row xl:flex-wrap xl:gap-8 gap-5 justify-center mb-10">
@@ -271,31 +276,33 @@ const Resume = () => {
           <div className="flex justify-between">
             <div className="mt-3 flex flex-col xl:gap-2 gap-1">
               <div className="text-[12px] xl:text-xl">Isham Gupta</div>
-              <div className="text-accent italic text-[10px] xl:text-[15px]">ishamgupta711@gmail.com</div>
+              <div className="text-accent italic text-[10px] xl:text-[15px]">
+                ishamgupta711@gmail.com
+              </div>
             </div>
             <div className="flex xl:gap-2 gap-1 mt-4 justify-between xl:text-2xl">
-                  <Link
-                    target="_blank"
-                    href="https://www.linkedin.com/in/isham-gupta-617548305/"
-                    className="h-[40px] w-[40px] flex justify-center items-center rounded-md hover:bg-accent ease-in-out duration-300 text-accent hover:text-white"
-                  >
-                    <FaLinkedinIn alphabetic={"LinkedIn"} />
-                  </Link>
-                  <Link
-                    target="_blank"
-                    href="https://www.instagram.com/guptaisham/"
-                    className="h-[40px] w-[40px]  flex justify-center items-center rounded-md hover:bg-accent ease-in-out duration-300 text-accent hover:text-white"
-                  >
-                    <FaInstagram alphabetic={"Insta"} />
-                  </Link>
-                  <Link
-                    target="_blank"
-                    href="https://github.com/isham-26"
-                    className="h-[40px] w-[40px] flex justify-center items-center rounded-md hover:bg-accent ease-in-out duration-300 text-accent hover:text-white"
-                  >
-                    <FaGithub alphabetic={"GitHub"} />
-                  </Link>
-                </div>
+              <Link
+                target="_blank"
+                href="https://www.linkedin.com/in/isham-gupta-617548305/"
+                className="h-[40px] w-[40px] flex justify-center items-center rounded-md hover:bg-accent ease-in-out duration-300 text-accent hover:text-white"
+              >
+                <FaLinkedinIn alphabetic={"LinkedIn"} />
+              </Link>
+              <Link
+                target="_blank"
+                href="https://www.instagram.com/guptaisham/"
+                className="h-[40px] w-[40px]  flex justify-center items-center rounded-md hover:bg-accent ease-in-out duration-300 text-accent hover:text-white"
+              >
+                <FaInstagram alphabetic={"Insta"} />
+              </Link>
+              <Link
+                target="_blank"
+                href="https://github.com/isham-26"
+                className="h-[40px] w-[40px] flex justify-center items-center rounded-md hover:bg-accent ease-in-out duration-300 text-accent hover:text-white"
+              >
+                <FaGithub alphabetic={"GitHub"} />
+              </Link>
+            </div>
           </div>
         </div>
       </div>

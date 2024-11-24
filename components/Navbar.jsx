@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <header className="flex justify-center py-8 xl:py-5 text-white border-b border-accent xl:mb-10 mb-1">
-      <div className="w-[90%] xl:w-[70%] flex justify-between">
+      <div className="w-[90%] xl:w-[70%] flex justify-between relative">
         <div>
           <Link href="/">
             <div className="logo text-4xl font-semibold cursor-pointer">
@@ -73,7 +73,7 @@ const Navbar = () => {
             </svg>
           </button>
           {isOpen && (
-            <div className="p-3 text-white rounded-md bg-black bg-opacity-90">
+            <div className="p-3 text-white rounded-md bg-black bg-opacity-90 absolute">
               <ul className="space-y-2">
                 <Link
                   href="/"
