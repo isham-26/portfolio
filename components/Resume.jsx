@@ -70,8 +70,8 @@ const Resume = () => {
           <div className="xl:text-3xl text-2xl">
             <span className="text-accent">$ </span>Resume.
           </div>
-          <Button className="bg-transparent text-accent border-2 border-accent uppercase rounded-full hover:bg-accent hover:text-white">
-                <a className="mr-3" href="/isham-gupta.pdf" download>Download resume</a>
+          <Button className="text-[12px] xl:text-xl bg-transparent text-accent border-2 border-accent uppercase rounded-full hover:bg-accent hover:text-white">
+                <a className="mr-2 " href="/isham-gupta.pdf" download>Download resume</a>
                 <FiDownload />
               </Button>
         </div>
@@ -96,8 +96,9 @@ const Resume = () => {
             <div className="xl:text-2xl text-xl flex items-center">
               <span className="text-accent">$ </span>Experience
             </div>
-            <Button className="bg-transparent border border-accent text-accent hover:bg-accent hover:text-white rounded-full mb-1">
+            <Button className="bg-transparent border border-accent text-accent hover:bg-accent hover:text-white rounded-full mb-1 text-[10px] xl:text-xl">
              <a className="mr-3" href="/internship.pdf" download> Certificate</a>
+             <FiDownload />
             </Button>
           </div>
           <div className="px-5">
@@ -132,7 +133,7 @@ const Resume = () => {
             </div>
           </div>
         </div>
-        <div className="p-4 w-full bg-transparent flex flex-col gap-5">
+        <div className="p-2 w-full bg-transparent flex flex-col gap-5">
         <div className="flex justify-between">
             <div className="xl:text-2xl text-xl flex items-center">
               <span className="text-accent">$ </span>Projects
@@ -268,11 +269,11 @@ const Resume = () => {
             </div>
           </div>
           <div className="flex justify-between">
-            <div className="mt-3 flex flex-col gap-2">
-              <div className="">Isham Gupta</div>
-              <div className="text-accent italic">ishamgupta711@gmail.com</div>
+            <div className="mt-3 flex flex-col xl:gap-2 gap-1">
+              <div className="text-[12px] xl:text-xl">Isham Gupta</div>
+              <div className="text-accent italic text-[10px] xl:text-[15px]">ishamgupta711@gmail.com</div>
             </div>
-            <div className="flex gap-2 mt-4 justify-between text-2xl">
+            <div className="flex xl:gap-2 gap-1 mt-4 justify-between xl:text-2xl">
                   <Link
                     target="_blank"
                     href="https://www.linkedin.com/in/isham-gupta-617548305/"

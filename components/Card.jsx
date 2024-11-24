@@ -4,7 +4,7 @@ import React from "react";
 import { BsArrowUpRight, BsGithub } from "react-icons/bs";
 const Card = ({ item }) => {
   return (
-    <div className="xl:w-[30rem] xl:gap-7 gap-4 bg-pink-50/20 rounded-md mb-3 xl:hover:scale-105 ease-in-out duration-500">
+    <div className="xl:w-[30rem] w-full xl:gap-7 gap-4 bg-pink-50/20 rounded-md mb-3 xl:hover:scale-105 ease-in-out duration-500">
       <div className="overflow-hidden bg-white rounded-tl-md rounded-tr-md ">
         <Image
           src={`/${item.img}`}

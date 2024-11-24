@@ -50,7 +50,7 @@ const Projects = () => {
   ]
   return (
     <div className="flex">
-      <div className="flex flex-wrap justify-center gap-7 p-4 xl:p-0">
+      <div className="flex flex-wrap justify-center gap-7 xl:p-0">
         {
            data.map((item,indx)=>{
               return (

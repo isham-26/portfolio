@@ -84,7 +84,7 @@ const Navbar = () => {
                   Home
                 </Link>
                 <Link
-                  href="/project"
+                  href="/projects"
                   className={`block ${
                     isActive("/projects") ? "bg-accent text-white" : ""
                   } hover:bg-accent px-2 py-1 rounded-md`}
