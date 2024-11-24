@@ -25,10 +25,7 @@ const HomePage = () => {
               <span className="italic">Hindi,English</span>
             </div>
             <div className="flex flex-col xl:flex-row xl:gap-10 gap-5 w-[10rem] ">
-              <Button className="bg-transparent text-accent border-2 border-accent uppercase rounded-full hover:bg-accent hover:text-white">
-                <span className="mr-3">Download cv</span>
-                <FiDownload />
-              </Button>
+              
             </div>
           </div>
           <Contect/>

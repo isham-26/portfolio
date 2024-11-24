@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { FiDownload } from "react-icons/fi";
 import { FaNodeJs, FaReact, FaInstagram } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
@@ -69,9 +70,10 @@ const Resume = () => {
           <div className="xl:text-3xl text-2xl">
             <span className="text-accent">$ </span>Resume.
           </div>
-          <Button className="bg-transparent border border-accent text-accent hover:bg-accent hover:text-white rounded-full">
-            Resume in file
-          </Button>
+          <Button className="bg-transparent text-accent border-2 border-accent uppercase rounded-full hover:bg-accent hover:text-white">
+                <a className="mr-3" href="/isham-gupta.pdf" download>Download resume</a>
+                <FiDownload />
+              </Button>
         </div>
         <div className="p-4 w-full bg-transparent flex flex-col gap-5">
           <div className="xl:text-2xl text-xl">
@@ -95,7 +97,7 @@ const Resume = () => {
               <span className="text-accent">$ </span>Experience
             </div>
             <Button className="bg-transparent border border-accent text-accent hover:bg-accent hover:text-white rounded-full mb-1">
-              Certificate
+             <a className="mr-3" href="/internship.pdf" download> Certificate</a>
             </Button>
           </div>
           <div className="px-5">
